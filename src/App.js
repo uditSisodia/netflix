@@ -1,0 +1,24 @@
+import "./App.css";
+import Row from "./components/Row";
+import requests from "./requests";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>this is h1 header</h1>
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+      />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="Documentries" fetchUrl={requests.fetchDocumentries} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+    </div>
+  );
+}
+
+export default App;
