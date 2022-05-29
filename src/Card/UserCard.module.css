@@ -1,0 +1,12 @@
+.imageUser {
+    height: 40px;
+    width: 40px;
+}
+.userTitleCurrent {
+    color:white;
+}
+
+.userTitleList {
+    color: black !important;
+}
+

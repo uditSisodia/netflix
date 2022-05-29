@@ -1,0 +1,16 @@
+.nav {
+    position: fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 130px;
+}
+.logo {
+    width: 100px;
+    object-fit: contain;
+    
+}
+
+
